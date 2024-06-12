@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AppWebApiApplication<App_web-api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "co.udea.api.AppWebApiApplication",
+            "projectName": "App_web-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

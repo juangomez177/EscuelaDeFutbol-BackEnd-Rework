@@ -1,0 +1,33 @@
+# Server properties
+server:
+  servlet:
+    context-path: /app_web_futbol
+  port: 8080
+
+# Spring properties
+spring:
+  application:
+    name: ApiAsoFutbol
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/AsoFutbol
+    #url: jdbc:postgresql://awsasofutbol.cpcake6ga93z.us-east-1.rds.amazonaws.com:5432/AwsAsoFutbol
+    username: postgres
+    password: root
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+# AWS properties
+aws:
+  access_key_id: AKIARXCFGPPH6RPYR4G5
+  secret_access_key: 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
+  s3:
+    bucket: files-asofutbol
+    region: us-east-1
+    s3Url: https://files-asofutbol.s3.amazonaws.com
